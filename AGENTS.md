@@ -122,23 +122,37 @@ This repository contains educational content for learning backend development wi
 
 ```
 kotlin-ktor/
-  README.md                  # This fundamentals guide
-  AGENTS.md                  # This file
-  assets/                    # Diagrams and images
-  modules/
-    01-project-setup/        # Entry: Setting up a Ktor project
-    02-routing/              # Entry: Routing, requests, responses
-    03-database/             # Mid: Database access with Exposed
-    04-authentication/       # Mid: Auth (JWT, OAuth2)
-    05-testing/              # Mid: Testing Ktor applications
-    06-coroutines-deep/      # Mid: Coroutines in depth
-    07-deployment/           # Senior: Docker, GraalVM, Kubernetes
-    08-multiplatform/        # Senior: KMP shared logic
-    09-production/           # Senior: Observability, resilience
+  README.md                               # Navigation table and learning objectives
+  AGENTS.md                               # This file
+  00-foundations/
+    01-what-is-programming.md             # What code does
+    02-paradigms.md                       # OOP, functional, imperative
+    03-sequential-decision-iteration.md   # The 3 building blocks
+    04-compiler-vs-interpreter.md         # JVM bytecode and why it matters
+    05-what-is-kotlin.md                  # History and motivation
+    06-why-kotlin-why-not-x.md            # Trade-offs vs alternatives
+  01-first-code/
+    01-setup.md                           # JDK, IDE, Gradle setup
+    02-variables-and-types.md             # val, var, type inference
+    03-control-flow.md                    # if, when, for, while
+    04-functions.md                       # Functions and extensions
+    05-classes-and-objects.md             # data, sealed, object, companion
+  02-core-language/
+    01-null-safety.md                     # Nullable types and operators
+    02-collections-and-functional.md      # map, filter, sequences
+    03-coroutines.md                      # suspend, async, structured concurrency
+    04-flows.md                           # Flow, StateFlow, SharedFlow
+    05-serialization.md                   # kotlinx.serialization
+  03-backend-fundamentals/
+    01-http-and-web-servers.md            # HTTP basics
+    02-rest-api-design.md                 # REST conventions
+    03-your-first-api.md                  # Ktor routing and handlers
+    04-database-access.md                 # Exposed type-safe SQL
+    05-authentication.md                  # JWT, sessions, auth concepts
+  04-production/
+    01-testing.md                         # Testing strategies
+    02-logging.md                         # Structured logging
+    03-deployment.md                      # Fat JAR, Docker, GraalVM
+  05-capstone/
+    README.md                             # Full project specification
 ```
-
-Each module contains:
-- `README.md` with explanations and code examples
-- `src/` with runnable code (where applicable)
-- `exercises/` with practice problems
-- `solutions/` with reference answers
