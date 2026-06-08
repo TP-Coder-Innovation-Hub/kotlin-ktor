@@ -1,6 +1,6 @@
 # What is Kotlin
 
-`[Entry]`
+
 
 ## Origin
 
@@ -19,6 +19,8 @@ data class User(val id: String, val name: String, val email: String)
 ```
 
 One line. The compiler generates equals, hashCode, toString, copy, and destructuring. Same bytecode. Less noise.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin vs Java boilerplate comparison data class 1 line vs 30 lines
 
 ## From Android to Server
 

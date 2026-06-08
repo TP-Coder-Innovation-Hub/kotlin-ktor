@@ -1,6 +1,6 @@
 # Classes and Objects
 
-`[Entry]`
+
 
 ## Basic Class
 

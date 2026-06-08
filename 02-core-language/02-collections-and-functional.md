@@ -1,6 +1,6 @@
 # Collections and Functional Operations
 
-`[Mid]`
+
 
 ## Collection Types
 

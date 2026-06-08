@@ -1,6 +1,6 @@
 # HTTP and Web Servers
 
-`[Entry]`
+
 
 ## What is HTTP
 

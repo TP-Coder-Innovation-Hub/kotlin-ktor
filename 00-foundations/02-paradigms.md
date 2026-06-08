@@ -1,6 +1,6 @@
 # Programming Paradigms
 
-`[Entry]`
+
 
 ## What is a Paradigm
 

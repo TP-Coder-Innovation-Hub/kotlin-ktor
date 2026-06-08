@@ -1,6 +1,6 @@
 # Flows
 
-`[Mid]`
+
 
 ## What is a Flow
 
@@ -89,6 +89,8 @@ riskyStream()
 `catch` handles exceptions from upstream (before the catch operator). It can emit replacement values.
 
 ## StateFlow: Hot Stream with State
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin Flow cold vs hot StateFlow SharedFlow diagram
 
 A `StateFlow` holds a single value and emits updates. It is hot -- it is always active, regardless of collectors. New collectors receive the current value immediately.
 

@@ -1,6 +1,6 @@
 # Null Safety
 
-`[Entry]`
+
 
 ## The Billion Dollar Mistake
 
@@ -13,6 +13,8 @@ Kotlin fixes this at the type level.
 ## Nullable vs Non-Null Types
 
 In Kotlin, types are non-null by default. A nullable type is marked with `?`.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin null safety type system String vs String safe call elvis
 
 ```kotlin
 val name: String = "Kotlin"   // Non-null. Cannot hold null.

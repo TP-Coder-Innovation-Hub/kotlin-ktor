@@ -1,6 +1,6 @@
 # Logging
 
-`[Mid]`
+
 
 ## Why Logging Matters
 

@@ -1,6 +1,6 @@
 # What is Programming
 
-`[Entry]`
+
 
 ## The Recipe Analogy
 

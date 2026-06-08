@@ -1,10 +1,12 @@
 # Coroutines
 
-`[Mid]`
+
 
 ## Why Coroutines
 
 A thread costs 1-2 MB of stack memory. 10,000 threads consume 10+ GB. 10,000 coroutines consume a few MB. Coroutines are lightweight because they suspend (pause) without blocking a thread.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — threads vs coroutines memory 1MB vs few KB lightweight
 
 Coroutines are not threads. They are not JavaScript Promises. They are a language-level construct for suspendable computation. The Kotlin compiler transforms suspend functions into state machines.
 
@@ -87,6 +89,8 @@ suspend fun getUser(id: String): User = withContext(Dispatchers.IO) {
 Never run blocking I/O on `Dispatchers.Default`. It starves the CPU-bound pool. Always wrap blocking calls with `withContext(Dispatchers.IO)`.
 
 ## Structured Concurrency Rules
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin structured concurrency parent child coroutine tree cancellation
 
 1. A parent waits for all children to complete.
 2. If a child fails, the parent is cancelled.

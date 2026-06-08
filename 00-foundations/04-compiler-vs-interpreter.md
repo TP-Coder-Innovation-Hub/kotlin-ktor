@@ -1,6 +1,6 @@
 # Compiler vs Interpreter
 
-`[Entry]`
+
 
 ## Two Ways to Run Code
 

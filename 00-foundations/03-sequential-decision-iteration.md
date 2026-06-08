@@ -1,6 +1,6 @@
 # Sequential, Decision, Iteration
 
-`[Entry]`
+
 
 ## The Three Building Blocks
 

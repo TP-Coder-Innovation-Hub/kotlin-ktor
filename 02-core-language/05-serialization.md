@@ -1,6 +1,6 @@
 # Serialization
 
-`[Mid]`
+
 
 ## What is Serialization
 

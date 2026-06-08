@@ -1,6 +1,6 @@
 # Database Access with Exposed
 
-`[Mid]`
+
 
 ## What is Exposed
 

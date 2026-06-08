@@ -4,7 +4,7 @@ Context and guidelines for AI coding assistants working in the Kotlin Backend (K
 
 ## Context
 
-This repository contains educational content for learning backend development with Kotlin and Ktor. It is part of the TP-Coder Innovation Hub learning paths. The audience is software engineers at varying skill levels (`[Entry]`, `[Mid]`, `[Senior]`) who want to build production-grade backend services using Kotlin.
+This repository contains educational content for learning backend development with Kotlin and Ktor. It is part of the TP-Coder Innovation Hub learning paths. The audience is software engineers at varying skill levels (, , ) who want to build production-grade backend services using Kotlin.
 
 ## Audience
 
@@ -22,7 +22,7 @@ This repository contains educational content for learning backend development wi
 - Use Gradle Kotlin DSL for build configuration
 - Follow structured concurrency principles (no `GlobalScope`, always use `coroutineScope` or `supervisorScope`)
 - Include null-safe patterns in all code examples
-- Mark difficulty level with `[Entry]`, `[Mid]`, or `[Senior]` badges where appropriate
+- Mark difficulty level with , , or  badges where appropriate
 - Write clear, concise explanations with code examples before prose
 - Use Mermaid diagrams for architectural or flow-based concepts
 - Use image placeholders in the format `![Description](./assets/image-name.png)` for conceptual diagrams

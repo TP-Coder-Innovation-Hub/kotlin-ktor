@@ -1,6 +1,6 @@
 # Setup: JDK, IDE, Gradle
 
-`[Entry]`
+
 
 ## Prerequisites
 

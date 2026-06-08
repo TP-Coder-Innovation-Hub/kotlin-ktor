@@ -1,6 +1,6 @@
 # Why Kotlin, Why Not X
 
-`[Mid]`
+
 
 ## The Honest Answer
 
@@ -92,6 +92,8 @@ These serve different purposes.
 - You are building systems software, parsers, or high-performance infrastructure
 
 ## The Decision Framework
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — language decision framework Kotlin Go Rust Scala Java
 
 ```
 Do you need the JVM ecosystem?          -> Kotlin

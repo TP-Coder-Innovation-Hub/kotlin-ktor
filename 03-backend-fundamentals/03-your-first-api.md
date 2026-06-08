@@ -1,6 +1,6 @@
 # Your First API with Ktor
 
-`[Mid]`
+
 
 ## Setup
 

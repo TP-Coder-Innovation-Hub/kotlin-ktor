@@ -1,6 +1,6 @@
 # Functions
 
-`[Entry]`
+
 
 ## Basic Functions
 
