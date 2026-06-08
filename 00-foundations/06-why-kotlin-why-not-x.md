@@ -93,7 +93,19 @@ These serve different purposes.
 
 ## The Decision Framework
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — language decision framework Kotlin Go Rust Scala Java
+```mermaid
+flowchart TD
+    Start[JVM Required?] -->|Yes| Q1{Android?}
+    Start -->|No| Q2{Max Performance?}
+    Q1 -->|Yes| K[Choose Kotlin]
+    Q1 -->|No| Q3{FP + Complex types?}
+    Q3 -->|Yes| SC[Choose Scala]
+    Q3 -->|No| K
+    Q2 -->|Yes| R[Choose Rust]
+    Q2 -->|No| Q4{Simple + Concurrent?}
+    Q4 -->|Yes| GO[Choose Go]
+    Q4 -->|No| PY[Choose Python]
+```
 
 ```
 Do you need the JVM ecosystem?          -> Kotlin

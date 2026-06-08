@@ -20,7 +20,17 @@ data class User(val id: String, val name: String, val email: String)
 
 One line. The compiler generates equals, hashCode, toString, copy, and destructuring. Same bytecode. Less noise.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin vs Java boilerplate comparison data class 1 line vs 30 lines
+```mermaid
+graph LR
+    subgraph "Java — ~30 lines"
+        J["private fields<br/>getter/setter<br/>equals/hashCode<br/>toString<br/>constructor"]
+    end
+    subgraph "Kotlin — 1 line"
+        K["data class User(val name: String, val age: Int)"]
+    end
+    J -->|"same result"| SAME[POJO / DTO]
+    K -->|"same result"| SAME
+```
 
 ## From Android to Server
 

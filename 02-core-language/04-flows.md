@@ -90,7 +90,17 @@ riskyStream()
 
 ## StateFlow: Hot Stream with State
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin Flow cold vs hot StateFlow SharedFlow diagram
+```mermaid
+graph TD
+    subgraph "Cold Flow"
+        CF1["flow { emit(1) }"] -->|each collector starts from beginning| C1[Collector A]
+        CF2["flow { emit(1) }"] -->|separate execution| C2[Collector B]
+    end
+    subgraph "Hot StateFlow"
+        SF["StateFlow(value)"] -->|current value| C3[Collector A]
+        SF -->|current value| C4[Collector B]
+    end
+```
 
 A `StateFlow` holds a single value and emits updates. It is hot -- it is always active, regardless of collectors. New collectors receive the current value immediately.
 

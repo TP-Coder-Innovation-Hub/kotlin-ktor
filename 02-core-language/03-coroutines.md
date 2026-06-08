@@ -6,7 +6,24 @@
 
 A thread costs 1-2 MB of stack memory. 10,000 threads consume 10+ GB. 10,000 coroutines consume a few MB. Coroutines are lightweight because they suspend (pause) without blocking a thread.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — threads vs coroutines memory 1MB vs few KB lightweight
+```mermaid
+graph LR
+    subgraph "OS Threads — 1MB each"
+        T1["Thread 1\n1MB stack"]
+        T2["Thread 2\n1MB stack"]
+        T3["Thread 3\n1MB stack"]
+        T4["Thread 4\n1MB stack"]
+    end
+    subgraph "Coroutines — few KB each"
+        CO1["Coroutine 1\n~few KB"]
+        CO2["Coroutine 2\n~few KB"]
+        CO3["Coroutine 3\n~few KB"]
+        CO4["Coroutine 4\n~few KB"]
+        CO5["...100K more"]
+    end
+    T1 --> T2
+    CO1 --> CO5
+```
 
 Coroutines are not threads. They are not JavaScript Promises. They are a language-level construct for suspendable computation. The Kotlin compiler transforms suspend functions into state machines.
 
@@ -90,7 +107,17 @@ Never run blocking I/O on `Dispatchers.Default`. It starves the CPU-bound pool. 
 
 ## Structured Concurrency Rules
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin structured concurrency parent child coroutine tree cancellation
+```mermaid
+graph TD
+    Main[Main Scope] --> C1[launch - Network]
+    Main --> C2[async - DB Query]
+    C1 --> C3[launch - Parse JSON]
+    C2 --> C4[launch - Map Result]
+    Main -.->|"cancel()"| C1
+    Main -.->|"cancel()"| C2
+    C1 -.->|"also cancels"| C3
+    C2 -.->|"also cancels"| C4
+```
 
 1. A parent waits for all children to complete.
 2. If a child fails, the parent is cancelled.

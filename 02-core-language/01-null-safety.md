@@ -14,7 +14,17 @@ Kotlin fixes this at the type level.
 
 In Kotlin, types are non-null by default. A nullable type is marked with `?`.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kotlin null safety type system String vs String safe call elvis
+```mermaid
+graph TD
+    subgraph "Kotlin Type System"
+        S["String — never null"]
+        SN["String? — may be null"]
+    end
+    SN -->|".? safe call"| R1["result: Int?"]
+    SN -->|"?: elvis"| R2["default value"]
+    SN -->|"!! force"| R3["NPE if null"]
+    S -->|".length"| OK["Int — safe"]
+```
 
 ```kotlin
 val name: String = "Kotlin"   // Non-null. Cannot hold null.
