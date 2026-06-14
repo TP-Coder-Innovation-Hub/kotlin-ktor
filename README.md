@@ -59,7 +59,7 @@ By the end of this path you will be able to:
 3. Skip to `02-core-language` if you have written Kotlin but want depth on coroutines, Flow, and null safety.
 4. Skip to `03-backend-fundamentals` if you know Kotlin and want to build APIs.
 5. Everyone should read `04-production` before shipping.
-6. `05-capstone` ties everything together.
+6. `05-workshop` ties everything together.
 
 ---
 
