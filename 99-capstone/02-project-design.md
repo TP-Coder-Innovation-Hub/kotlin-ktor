@@ -7,7 +7,7 @@
 1. **Guest identity is a seeded record, not an auth system.** The spec passes `guestId` but defines no users or login. Guests live in a table in reservation-service; clients send `X-Guest-Id`. Auth is not a learning objective here — the saga is. Note the simplification in your README.
 2. **Quote before booking.** The spec locks an itemized price at creation, but a booking UI must show the price *before* the guest commits. This design adds `GET /bookings/quote` — same pricing engine, no side effects. The lock-at-creation rule is unchanged: the quote is informational, the booking response is the contract.
 3. **`BookingReminder` gets a producer.** The spec lists it as "(scheduled)" with no owner. Design: a coroutine-based scheduled job in reservation-service (e.g., hourly) publishes `BookingReminder` for confirmed bookings checking in within 24 h, marking each booking `reminder_sent` so the job is idempotent.
-4. **The "gateway" is an nginx reverse proxy in Compose** (`/api/inventory/* → inventory`, `/api/bookings/* → reservation`, `/api/payments/* → payment`). Building a real gateway is the Spring Cloud capstone's job, not this one.
+4. **The "gateway" is an nginx reverse proxy in Compose** (`/api/inventory/* → inventory`, `/api/bookings/* → reservation`, `/api/payments/* → payment`). Building a real gateway is the Spring Cloud workshop's job, not this one.
 5. **Notifications get one read endpoint.** Channels are stdout (per spec), but both frontends want a "booking updates" view, and the records are already persisted. `GET /notifications?guestId=` is the only addition.
 
 ---
