@@ -1,4 +1,4 @@
-# Capstone Design: Booking Management System
+# Workshop Design: Booking Management System
 
 > Companion to [01-capstone-spec.md](./01-capstone-spec.md). Diagrams, contracts, schemas — code organization is yours.
 
