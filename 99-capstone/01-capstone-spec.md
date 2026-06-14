@@ -1,4 +1,4 @@
-# Capstone Project: Booking Management System
+# Workshop Project: Booking Management System
 
 **Roadmap:** Kotlin Backend (Ktor)
 **Challenge Repo:** https://github.com/TP-Coder-Innovation-Hub/booking-management-system-challenge
