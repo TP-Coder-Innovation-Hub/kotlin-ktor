@@ -49,7 +49,7 @@ By the end of this path you will be able to:
 | 01 | Testing |  | [04-production/01-testing.md](04-production/01-testing.md) |
 | 02 | Logging |  | [04-production/02-logging.md](04-production/02-logging.md) |
 | 03 | Deployment |  | [04-production/03-deployment.md](04-production/03-deployment.md) |
-| **05** | **Capstone** | | |
+| **05** | **Workshop** | | |
 | -- | Full project spec |  | [05-capstone/README.md](05-capstone/README.md) |
 
 ## How to Use This Path
