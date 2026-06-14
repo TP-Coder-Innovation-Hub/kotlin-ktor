@@ -153,6 +153,6 @@ kotlin-ktor/
     01-testing.md                         # Testing strategies
     02-logging.md                         # Structured logging
     03-deployment.md                      # Fat JAR, Docker, GraalVM
-  05-capstone/
+  05-workshop/
     README.md                             # Full project specification
 ```
