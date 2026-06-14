@@ -241,7 +241,7 @@ final_price = sum(each night: base_price x seasonal_multiplier x weekend_multipl
 
 **Context:** Reservation-service needs real-time inventory checks and payment initiation.
 **Decision:** Direct REST calls between services (no service mesh).
-**Consequences:** Simple to implement. For production, would need circuit breakers and retries (out of scope for this capstone).
+**Consequences:** Simple to implement. For production, would need circuit breakers and retries (out of scope for this workshop).
 
 ---
 
